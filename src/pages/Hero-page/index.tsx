@@ -1,8 +1,22 @@
-import Image from "next/image";
+"use client";
 
-const links = [{ name: "Portfolio", href: "#portfolio" }];
+import { motion } from "framer-motion";
+
+const links = [{ name: "Portofolio", href: "#portofolio" }];
+const nameVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.5,
+    },
+  }),
+};
 
 export default function Hero() {
+  const name = "Ghulam Al Hafizh".split("");
   return (
     <section
       id="hero"
@@ -19,7 +33,18 @@ export default function Hero() {
 
         <div className="md:w-1/2 lg:w-3/5 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-            Ghulam Al Hafizh
+            {name.map((letter, index) => (
+              <motion.span
+                key={index}
+                variants={nameVariants}
+                initial="hidden"
+                animate="visible"
+                custom={index}
+                className="inline-block"
+              >
+                {letter === " " ? "\u00A0" : letter}
+              </motion.span>
+            ))}
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-600 mb-6">
             Full-Stack Web Developer
