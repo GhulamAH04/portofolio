@@ -1,5 +1,3 @@
-// data/testimonials.ts
-
 export type Testimonial = {
   quote: string;
   name: string;
@@ -28,5 +26,3 @@ export const testimonials: Testimonial[] = [
     position: "Frontend Lead at Sekolah Mutant"
   }
 ];
-
-// Replace [Your Name] with your actual name

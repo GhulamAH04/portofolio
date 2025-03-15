@@ -6,5 +6,4 @@ export const portfolioItems = [
     action: "Developed React frontend with Node.js backend, integrated AWS...",
     result: "35% increase in online sales within first 3 months..."
   },
-  // Add more items
 ];
