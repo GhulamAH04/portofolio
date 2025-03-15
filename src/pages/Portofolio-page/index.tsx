@@ -37,7 +37,7 @@ export default function PortofolioPage() {
                     Modern Portfolio Development
                   </h3>
                   <p className="text-purple-600 font-medium mb-4">
-                    Self-Driven Project • 2024
+                    Self-Driven Project • 2025
                   </p>
 
                   <div className="prose prose-purple">
@@ -55,7 +55,7 @@ export default function PortofolioPage() {
                         >
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
                         </svg>
-                        <span>Next.js 14 (App Router)</span>
+                        <span>Next.js 14</span>
                       </div>
                       <div className="flex items-center space-x-3">
                         <svg
@@ -65,7 +65,7 @@ export default function PortofolioPage() {
                         >
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
                         </svg>
-                        <span>TypeScript 5.0</span>
+                        <span>TypeScript</span>
                       </div>
                       <div className="flex items-center space-x-3">
                         <svg
@@ -75,7 +75,7 @@ export default function PortofolioPage() {
                         >
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
                         </svg>
-                        <span>Tailwind CSS 3.3</span>
+                        <span>Tailwind CSS</span>
                       </div>
                       <div className="flex items-center space-x-3">
                         <svg
