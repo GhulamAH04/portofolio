@@ -5,3 +5,10 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  images: {
+    domains: ['localhost'], // Untuk development
+    // Untuk production tambahkan domain hosting Anda
+  },
+}
