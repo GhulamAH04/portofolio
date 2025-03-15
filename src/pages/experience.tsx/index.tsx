@@ -1,3 +1,4 @@
+"use client";
 import { experience } from "@/data/experience";
 
 export default function Experience() {
