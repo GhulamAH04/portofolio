@@ -35,9 +35,31 @@ export default function PortofolioPage() {
                 </div>
 
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                    Modern Portfolio Development
-                  </h3>
+                  <div className="flex items-center gap-4 mb-2">
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      Modern Portfolio Development
+                    </h3>
+                    <a 
+                      href="http://portofolioghulam.vercel.app" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1.5 group/link"
+                    >
+                      <span className="text-sm font-medium">Live Demo</span>
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        className="w-4 h-4 -mt-px stroke-current"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                   <p className="text-purple-600 font-medium mb-4">
                     Self-Driven Project • 2025
                   </p>
