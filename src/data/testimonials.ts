@@ -7,12 +7,12 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote: "Working with Ghulam has been a great experience. Their ability to quickly adapt to new technologies and eagerness to learn helped them grow rapidly as a junior developer.",
-    name: "Bang Maik",
+    name: "Mister Aloy the Friendly",
     position: "Senior Full-Stack Developer at Sekolah Mutant"
   },
   {
     quote: "For a junior developer, Ghulam demonstrates exceptional problem-solving skills. They know when to ask for help but always try to find solutions independently first.",
-    name: "Tawa-pon",
+    name: "Tawa-pon-kun",
     position: "Tech Lead at Sekolah Mutant"
   },
   {
