@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 
-const links = [{ name: "Portofolio", href: "#portofolio" }];
-
 // Variasi animasi untuk nama menggunakan framer-motion
 const nameVariants = {
   hidden: { opacity: 0, y: 20 }, // Keadaan awal: tidak terlihat dan sedikit turun
