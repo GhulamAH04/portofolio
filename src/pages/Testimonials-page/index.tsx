@@ -7,12 +7,15 @@ export default function Testimonials() {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
         <div className="flex flex-wrap justify-center gap-8">
+          {/* array 'testimonials' untuk merender setiap testimonial */}
           {testimonials.map((testi, index) => (
             <div
               key={index}
               className="bg-white p-8 rounded-lg shadow-lg flex-1 basis-full md:min-w-[calc(50%-32px)] md:basis-[calc(50%-32px)]"
             >
+              {/* Kutipan testimonial */}
               <p className="text-gray-600 mb-4 italic">"{testi.quote}"</p>
+              {/* Pemisah dan informasi pemberi testimonial */}
               <div className="border-t pt-4">
                 <p className="font-semibold">{testi.name}</p>
                 <p className="text-gray-500 text-sm">{testi.position}</p>

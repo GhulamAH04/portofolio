@@ -114,7 +114,9 @@ export default function AboutMeSection() {
           {/* Skills Section */}
           <div className="flex flex-col gap-8">
             <h3 className="text-xl font-semibold text-gray-700">Core Skills</h3>
+            {/* Flex wrap digunakan agar skills dapat berpindah ke baris baru jika layar kecil */}
             <div className="flex flex-wrap gap-4">
+              {/* Setiap skill ditampilkan dalam flex item */}
               <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow flex-1 basis-24">
                 <SiJavascript className="w-8 h-8 text-yellow-400 mb-2" />
                 <span className="text-sm text-gray-600">JavaScript</span>

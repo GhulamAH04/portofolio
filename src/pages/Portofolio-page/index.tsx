@@ -13,10 +13,14 @@ export default function PortofolioPage() {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative group">
+            {/* Kartu proyek portofolio */}
             <div className="relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 transition-transform duration-300 hover:scale-[1.02]">
+              {/* Flex container untuk gambar dan deskripsi */}
               <div className="flex flex-col md:flex-row gap-8">
+                {/* Bagian gambar proyek */}
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 rounded-xl bg-gradient-to-r from-purple-100 to-blue-50 flex items-center justify-center">
+                    {/* Ikon proyek */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-16 w-16 text-purple-600"
@@ -34,21 +38,25 @@ export default function PortofolioPage() {
                   </div>
                 </div>
 
+                {/* Bagian deskripsi proyek */}
                 <div className="flex-grow">
+                  {/* Judul proyek dan tautan demo langsung */}
                   <div className="flex items-center gap-4 mb-2">
                     <h3 className="text-2xl font-bold text-gray-800">
                       Modern Portfolio Development
                     </h3>
-                    <a 
-                      href="http://portofolioghulam.vercel.app" 
+                    {/* link untuk demo langsung proyek */}
+                    <a
+                      href="http://portofolioghulam.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1.5 group/link"
                     >
                       <span className="text-sm font-medium">Live Demo</span>
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
+                      {/* Ikon untuk link demo langsung */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
                         className="w-4 h-4 -mt-px stroke-current"
                         strokeWidth="2"
                       >
@@ -60,17 +68,21 @@ export default function PortofolioPage() {
                       </svg>
                     </a>
                   </div>
+                  {/* Informasi proyek */}
                   <p className="text-purple-600 font-medium mb-4">
                     Self-Driven Project • 2025
                   </p>
 
+                  {/* Deskripsi proyek dan teknologi yang digunakan */}
                   <div className="prose prose-purple">
                     <p className="text-gray-600 mb-4">
                       Crafted a performant and modern web presence using
                       cutting-edge technologies:
                     </p>
 
+                    {/* Grid untuk teknologi yang digunakan */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                      {/* Setiap item teknologi */}
                       <div className="flex items-center space-x-3">
                         <svg
                           className="w-5 h-5 text-purple-500"
@@ -81,6 +93,7 @@ export default function PortofolioPage() {
                         </svg>
                         <span>Next.js 14</span>
                       </div>
+                      {/* Item teknologi lainnya */}
                       <div className="flex items-center space-x-3">
                         <svg
                           className="w-5 h-5 text-blue-500"

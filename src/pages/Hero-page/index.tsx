@@ -3,20 +3,23 @@
 import { motion } from "framer-motion";
 
 const links = [{ name: "Portofolio", href: "#portofolio" }];
+
+// Variasi animasi untuk nama menggunakan framer-motion
 const nameVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 20 }, // Keadaan awal: tidak terlihat dan sedikit turun
   visible: (i: number) => ({
+    // Keadaan akhir: terlihat dan kembali ke posisi normal
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
-      duration: 0.5,
+      delay: i * 0.1, // Delay animasi berdasarkan indeks huruf (efek muncul satu per satu)
+      duration: 0.5, // Durasi animasi 0.5 detik
     },
   }),
 };
 
 export default function Hero() {
-  const name = "Ghulam Al Hafizh".split("");
+  const name = "Ghulam Al Hafizh".split(""); // Memecah nama menjadi array huruf
   return (
     <section
       id="hero"
@@ -33,6 +36,7 @@ export default function Hero() {
 
         <div className="md:w-1/2 lg:w-3/5 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+            {/* Memetakan setiap huruf dalam nama dan menerapkan animasi */}
             {name.map((letter, index) => (
               <motion.span
                 key={index}
@@ -42,6 +46,7 @@ export default function Hero() {
                 custom={index}
                 className="inline-block"
               >
+                {/* Menangani spasi agar tidak collapse */}
                 {letter === " " ? "\u00A0" : letter}
               </motion.span>
             ))}
