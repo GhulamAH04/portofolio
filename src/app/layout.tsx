@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/Navbar/Navbar";
-import { Inter } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 text-gray-900`}>
+        <div className="relative min-h-screen">
+          {/* Subtle background accents (calm, HR-friendly) */}
+          <div className="pointer-events-none absolute -top-24 left-[-140px] h-80 w-80 rounded-full bg-blue-200/25 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 right-[-140px] h-80 w-80 rounded-full bg-purple-200/20 blur-3xl" />
+
+          {/* Content */}
+          <div className="relative">{children}</div>
+        </div>
       </body>
     </html>
   );
